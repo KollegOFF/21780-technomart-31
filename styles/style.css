@@ -1,0 +1,376 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-dark: #32425c;
+  --basic-grey: #f1f5f7;
+  --basic-red: #ee3643;
+  --basic-green: #63a63e;
+  --basic-beige: #f9f5f0;
+  --basic-yellow: #ffd180;
+
+  --extra-dark: #293449;
+  --ultra-dark: #161d29;
+  --light-green: #5fbb2d;
+  --extra-grey: #a9a9a9;
+  --light-grey: #c5c5c5;
+  --extra-red: #ca2c37;
+  --ultra-red: #ba2732;
+
+  --special-yellow: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-purple: #dc91d8;
+  --special-green: #8ed78f;
+
+  --transparent-black: rgba(0, 0, 0, .1);
+}
+
+.page-body {
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.page-body a {
+  text-decoration: none;
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  background-color: var(--basic-grey);
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: var(--basic-white);
+}
+
+.main-navigation .bookmarks:active,
+.main-navigation .cart:active,
+.main-navigation .checkout:active {
+  background-color: var(--ultra-dark);
+}
+
+.main-navigation .checkout {
+  background-color: var(--basic-green);
+}
+
+.main-navigation .checkout:hover,
+.main-navigation .checkout:active {
+  background-color: var(--light-green);
+}
+
+.main-navigation .description {
+  color: var(--basic-red);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.main-navigation .phone {
+  color: var(--basic-red);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.main-navigation .address {
+  color: var(--basic-dark);
+  font-size: 14px;
+}
+
+.user-navigation a {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-navigation a:hover {
+  color: var(--basic-red);
+}
+
+.user-navigation a:active {
+  color: var(--light-grey);
+}
+
+.site-navigation {
+  background-color: var(--basic-dark);
+}
+
+.site-navigation a:hover {
+  background-color: var(--extra-dark);
+}
+
+.site-navigation a:active {
+  background-color: var(--ultra-dark);
+}
+
+.most-popular {
+  color: var(--basic-white);
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.most-popular ul {
+  list-style: none;
+}
+
+.most-popular a {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.most-popular a:hover {
+  background-color: var(--light-grey);
+}
+
+.most-popular a:active {
+  background-color: var(--extra-grey);
+}
+
+.most-popular .materials,
+.most-popular .delivery {
+  background-color: var(--special-yellow);
+}
+
+.most-popular .tool {
+  background-color: var(--special-blue);
+}
+
+.most-popular .machinery {
+  background-color: var(--special-purple);
+}
+
+.most-popular .discount {
+  background-color: var(--special-green);
+}
+
+.slider {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.slider li {
+  background-color: var(--transparent-black);
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider a {
+  background-color: var(--basic-red);
+}
+
+.slider a:hover {
+  background-color: var(--extra-red);
+}
+
+.slider a:active {
+  background-color: var(--ultra-red);
+}
+
+.popular-products h2,
+.popular-brands h2 {
+  background-color: var(--basic-beige);
+  color: var(--basic-dark);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.popular-products ul,
+.popular-brands ul {
+  list-style: none;
+}
+
+.popular-products > a,
+.popular-brands > a {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.popular-products > a:hover,
+.popular-brands > a:hover {
+  background-color: var(--extra-red);
+}
+
+.popular-products > a:active,
+.popular-brands > a:active {
+  background-color: var(--ultra-red);
+}
+
+.product-list a {
+  color: var(--basic-black);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.product-list del,
+.product-list ins {
+  color: var(--extra-grey);
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.product-list ins {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+.services {
+  background-color: var(--basic-grey);
+}
+
+.services h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services dt {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.services dt:hover {
+  background-color: var(--extra-dark);
+}
+
+.services dt:active {
+  background-color: var(--basic-white);
+  color: var(--basic-dark);
+}
+
+.services .service-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services a {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.services a:hover {
+  background-color: var(--extra-red);
+}
+
+.services a:active {
+  background-color: var(--ultra-red);
+}
+
+.about-us h2,
+.contacts h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-us p,
+.contacts p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-us a,
+.contacts a {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.about-us a:hover,
+.contacts a:hover {
+  background-color: var(--extra-red);
+}
+
+.about-us a:active,
+.contacts a:active {
+  background-color: var(--ultra-red);
+}
+
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer a {
+  color: inherit;
+}
+
+.main-footer a:hover {
+  text-decoration: underline;
+}
+
+.main-footer a:active {
+  text-decoration: none;
+  opacity: .5;
+}
+
+.catalog-navigation {
+  color: var(--basic-yellow);
+}
+
+.copyright,
+.copyright-links {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.copyright-links a {
+  color: var(--basic-yellow);
+}
+
+.copyright-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright-links a:active {
+  color: var(--basic-red);
+  text-decoration: none;
+  opacity: 1;
+}
