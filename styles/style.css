@@ -22,6 +22,10 @@
   --special-green: #8ed78f;
 
   --transparent-black: rgba(0, 0, 0, .1);
+  --transparent-white: rgba(255, 255, 255, .5);
+  --transparent-light-white: rgba(255, 255, 255, .3);
+  --transparent-extra-grey: rgba(169, 169, 169, .3);
+  --transparent-light-grey: rgba(197, 197, 197, .3);
 }
 
 .page-body {
@@ -47,6 +51,10 @@
   background-color: var(--basic-grey);
 }
 
+.main-navigation > div {
+  background-color: var(--extra-dark);
+}
+
 .main-navigation ul {
   list-style: none;
 }
@@ -55,10 +63,19 @@
   color: var(--basic-white);
 }
 
+.main-navigation .logo {
+  background-color: var(--basic-red);
+}
+
+.main-navigation .logo:active {
+  background-color: var(--ultra-red);
+}
+
 .main-navigation .bookmarks:active,
 .main-navigation .cart:active,
 .main-navigation .checkout:active {
   background-color: var(--ultra-dark);
+  color: var(--transparent-white);
 }
 
 .main-navigation .checkout {
@@ -127,6 +144,7 @@
 }
 
 .most-popular a {
+  background-color: var(--transparent-light-white);
   color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
@@ -134,11 +152,11 @@
 }
 
 .most-popular a:hover {
-  background-color: var(--light-grey);
+  background-color: var(--transparent-light-grey);
 }
 
 .most-popular a:active {
-  background-color: var(--extra-grey);
+  background-color: var(--transparent-extra-grey);
 }
 
 .most-popular .materials,
