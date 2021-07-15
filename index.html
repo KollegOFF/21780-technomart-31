@@ -18,7 +18,9 @@
       <nav class="main-navigation">
         <div class="short-links-wrapper">
           <div class="short-links">
-            <a class="logo"><img src="img/logo.svg" width="138" height="23" alt="Техномарт"></a>
+            <a class="logo">
+              <img src="img/logo.svg" width="108" height="18" alt="Техномарт">
+            </a>
 
             <form action="https://echo.htmlacademy.ru" method="GET">
               <input type="text" name="q" placeholder="Поиск:">
@@ -39,14 +41,19 @@
 
         <div class="main-links">
           <p class="description">
-            Интернет-магазин строительных материалов и инструментов для ремонта
+            Интернет-магазин<br>
+            строительных материалов<br>
+            и инструментов для ремонта
           </p>
 
-          <p class="address"><a href="tel:+78005558628" class="phone">+7 800 555-86-28</a>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+          <p class="address">
+            <a href="tel:+78005558628" class="phone">+7 800 555-86-28</a>
+            г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+          </p>
 
           <ul class="user-navigation">
             <li>
-              <a href="#">Войти</a>
+              <a class="login" href="#">Войти</a>
             </li>
             <li>
               <a href="#">Регистрация</a>
@@ -81,13 +88,13 @@
     </header>
 
     <main>
-      <h1>Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="visually-hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
       <section class="most-popular">
-        <h2>Популярные услуги и категории товаров</h2>
+        <h2 class="visually-hidden">Популярные услуги и категории товаров</h2>
 
         <ul>
-          <li class="materials">
+          <li class="materials new">
             <h3>Материалы</h3>
             <a href="#">на любой вкус</a>
           </li>
@@ -131,26 +138,42 @@
         <ul class="product-list">
           <li>
             <a href="#">
-              Перфоратор BOSCH BFG 9000 <del>32500 Р.</del> <ins>25500 Р.</ins>
-              <img src="img/products/bosh-bfg-9000.jpg" width="184" height="164" alt="">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <del>32500 Р.</del>
+              <ins>25500 Р.</ins>
+              <div class="img-wrapper">
+                <img src="img/products/bosh-bfg-9000.jpg" width="184" height="164" alt="">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="new" href="#">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <del>22500 Р.</del>
+              <ins>15500 Р.</ins>
+              <div class="img-wrapper">
+                <img src="img/products/bosh-bfg-3000.jpg" width="127" height="112" alt="">
+              </div>
             </a>
           </li>
           <li>
             <a href="#">
-              Перфоратор BOSCH BFG 3000 <del>22500 Р.</del> <ins>15500 Р.</ins>
-              <img src="img/products/bosh-bfg-3000.jpg" width="127" height="112" alt="">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <del>30500 Р.</del>
+              <ins>25500 Р.</ins>
+              <div class="img-wrapper">
+                <img src="img/products/bosh-bfg-6000.jpg" width="144" height="128" alt="">
+              </div>
             </a>
           </li>
           <li>
-            <a href="#">
-              Перфоратор BOSCH BFG 6000 <del>30500 Р.</del> <ins>25500 Р.</ins>
-              <img src="img/products/bosh-bfg-6000.jpg" width="144" height="128" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Перфоратор BOSCH BFG 2000 <del>22500 Р.</del> <ins>12500 Р.</ins>
-              <img src="img/products/bosh-bfg-2000.jpg" width="127" height="112" alt="">
+            <a class="new" href="#">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <del>22500 Р.</del>
+              <ins>12500 Р.</ins>
+              <div class="img-wrapper">
+                <img src="img/products/bosh-bfg-2000.jpg" width="127" height="112" alt="">
+              </div>
             </a>
           </li>
         </ul>
@@ -162,30 +185,46 @@
           <a href="#">Все производители</a>
         </div>
 
-        <ul>
+        <ul class="brand-list">
           <li>
-            <a href="#">BOSCH<img src="img/brands/bosch.jpg" width="126" height="37" alt=""></a>
+            <a href="#">
+              <img src="img/brands/bosch.jpg" width="126" height="37" alt="BOSCH">
+            </a>
           </li>
           <li>
-            <a href="#">Makita<img src="img/brands/makita.jpg" width="123" height="40" alt=""></a>
+            <a href="#">
+              <img src="img/brands/makita.jpg" width="123" height="40" alt="Makita">
+            </a>
           </li>
           <li>
-            <a href="#">DeWALT<img src="img/brands/dewalt.jpg" width="146" height="44" alt=""></a>
+            <a href="#">
+              <img src="img/brands/dewalt.jpg" width="146" height="44" alt="DeWALT">
+            </a>
           </li>
           <li>
-            <a href="#">ИНТЕРСКОЛ<img src="img/brands/interskol.jpg" width="200" height="76" alt=""></a>
+            <a href="#">
+              <img src="img/brands/interskol.jpg" width="200" height="76" alt="ИНТЕРСКОЛ">
+            </a>
           </li>
           <li>
-            <a href="#">HITACHI<img src="img/brands/hitachi.jpg" width="169" height="31" alt=""></a>
+            <a href="#">
+              <img src="img/brands/hitachi.jpg" width="169" height="31" alt="HITACHI">
+            </a>
           </li>
           <li>
-            <a href="#">LG<img src="img/brands/lg.jpg" width="121" height="73" alt=""></a>
+            <a href="#">
+              <img src="img/brands/lg.jpg" width="121" height="73" alt="LG">
+            </a>
           </li>
           <li>
-            <a href="#">AEG<img src="img/brands/aeg.jpg" width="151" height="96" alt=""></a>
+            <a href="#">
+              <img src="img/brands/aeg.jpg" width="151" height="96" alt="AEG">
+            </a>
           </li>
           <li>
-            <a href="#">METABO<img src="img/brands/metabo.jpg" width="204" height="69" alt=""></a>
+            <a href="#">
+              <img src="img/brands/metabo.jpg" width="204" height="69" alt="METABO">
+            </a>
           </li>
         </ul>
       </section>
@@ -195,33 +234,37 @@
           <h2>Сервисы</h2>
 
           <p>
-            Хороший интернет-магазин отличается от плохого не только ценами!
+            Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
 
           <dl>
-            <dt>Доставка</dt>
-            <dd>
+            <dt class="active">Доставка</dt>
+            <dd class="delivery active">
               <p class="service-title">Доставка</p>
               <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!
               </p>
             </dd>
             <dt>Гарантия</dt>
-            <dd>
+            <dd class="guarantee">
               <p class="service-title">Гарантия</p>
               <p>
-                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
-                Мы обменяем сгоревший товар на новый.
+                Если купленный у нас товар поломается или заискрит,<br>
+                а также в случае пожара, спровоцированного его<br>
+                возгоранием, вы всегда можете быть уверены в нашей
+                гарантии. Мы обменяем сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </dd>
             <dt>Кредит</dt>
-            <dd>
+            <dd class="credit">
               <p class="service-title">Кредит</p>
               <p>
-                Залесть в долговую яму стало проще!
+                Залесть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.
               </p>
               <a href="#">Отправить заявку</a>
@@ -240,7 +283,7 @@
           </p>
 
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
 
@@ -257,7 +300,8 @@
           <h2>Контакты</h2>
 
           <p>
-            Вы можете забрать товар сами, заехав в наш офис:
+            Вы можете забрать товар сами,<br>
+            заехав в наш офис:
           </p>
 
           <img src="img/map-min.jpg" width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
@@ -269,7 +313,9 @@
 
     <footer class="main-footer">
       <div class="footer-navigation-wrapper">
-        <a><img src="img/logo.svg" width="138" height="23" alt="Техномарт"></a>
+        <a class="logo">
+          <img src="img/logo.svg" width="138" height="23" alt="Техномарт">
+        </a>
 
         <ul>
           <li>
@@ -290,11 +336,11 @@
         </ul>
 
         <p>
-          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
           <a href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
 
-        <ul class="catalog-navigation">
+        <ul>
           <li>
             <a href="#">Материалы</a>
           </li>
@@ -313,34 +359,36 @@
       <div class="copyright-links-wrapper">
         <div>
           <p class="copyright">
-            © 2010-2021 Компания «Техномарт»
+            © 2010-2021 Компания «Техномарт»<br>
             Все права защищены
           </p>
     
           <ul class="social-links">
             <li>
-              <a href="#">ВКонтакте</a>
+              <a href="#">
+                <img src="img/icons/vkontakte.svg" width="27" height="16" alt="ВКонтакте">
+              </a>
             </li>
             <li>
-              <a href="#">Фейсбук</a>
+              <a href="#">
+                <img src="img/icons/facebook.svg" width="12" height="22" alt="Фейсбук">
+              </a>
             </li>
             <li>
-              <a href="#">Инстаграм</a>
+              <a href="#">
+                <img src="img/icons/instagram.svg" width="21" height="21" alt="Инстаграм">
+              </a>
             </li>
           </ul>
     
           <ul class="copyright-links">
             <li>
-              <p>
-                Обратная связь:
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
+              Обратная связь:<br>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li>
-              <p>
-                Разработано —
-                <a href="htmlacademy.ru">htmlacademy.ru</a>
-              </p>
+              Разработано —<br>
+              <a href="htmlacademy.ru">htmlacademy.ru</a>
             </li>
           </ul>
         </div>
