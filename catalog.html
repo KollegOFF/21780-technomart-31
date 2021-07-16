@@ -158,17 +158,20 @@
           <h2>Сортировка товаров</h2>
 
           <form action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset>
-              <legend>Свойство для сортировки</legend>
+            <p>Сортировка:</p>
+            <div>
+              <fieldset>
+                <legend>Свойство для сортировки</legend>
 
-              <ul>
-                <li><label class="current"><input type="radio" name="by" value="price" checked> По цене</label></li>
-                <li><label><input type="radio" name="by" value="type"> По типу</label></li>
-                <li><label><input type="radio" name="by" value="feature"> По функционалу</label></li>
-              </ul>
-            </fieldset>
-            <button type="submit" name="sort" value="asc">От меньшего к большему</button>
-            <button type="submit" name="sort" value="desc">От большего к меньшему</button>
+                <ul>
+                  <li><label class="current"><input type="radio" name="by" value="price" checked> По цене</label></li>
+                  <li><label><input type="radio" name="by" value="type"> По типу</label></li>
+                  <li><label><input type="radio" name="by" value="feature"> По функционалу</label></li>
+                </ul>
+              </fieldset>
+              <button type="submit" name="sort" value="asc">От меньшего к большему</button>
+              <button type="submit" name="sort" value="desc">От большего к меньшему</button>
+            </div>
           </form>
         </section>
 
