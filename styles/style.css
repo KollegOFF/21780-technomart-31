@@ -261,6 +261,7 @@
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -302,6 +303,7 @@
   font-size: 21px;
   line-height: 21px;
   text-align: center;
+  flex-grow: 1;
 }
 
 .main-links .site-navigation {
@@ -957,6 +959,7 @@
   text-transform: uppercase;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+  display: flex;
 }
 
 .catalog-wrapper > p {
@@ -1005,6 +1008,7 @@
 
 .products .paging {
   list-style: none;
+  display: flex;
 }
 
 .paging a {
@@ -1067,6 +1071,13 @@
   line-height: 18px;
   text-transform: uppercase;
   grid-column: 4 / -1;
+}
+
+.sorting form,
+.sorting div,
+.sorting ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sorting ul {
