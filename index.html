@@ -23,7 +23,17 @@
             </a>
 
             <form action="https://echo.htmlacademy.ru" method="GET">
-              <input type="text" name="q" placeholder="Поиск:">
+              <label>
+                <input class="site-search" type="search" name="q" placeholder="Поиск:">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.5 12l3.5 3.6-1.4 1.4-3.6-3.5a7.5 7.5 0 01-12-6A7.5 7.5 0 1113.5 12zm-6-10a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"
+                  />
+                </svg>
+                <span class="visually-hidden">Поиск по сайту</span>
+              </label>
             </form>
 
             <a href="#" class="bookmarks">Закладки: 0</a>
@@ -118,13 +128,13 @@
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <img src="img/slider/perforators.jpg" width="620" height="266" alt="Рабочий сверлит стену используя перфоратор.">
-            <a href="#">Открыть каталог</a>
+            <a href="catalog.html">Открыть каталог</a>
           </li>
           <li class="slider">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
             <img src="img/slider/drills.jpg" width="620" height="266" alt="Рабочий сверлит стену используя дрель.">
-            <a href="#">Открыть каталог</a>
+            <a href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
       </section>
@@ -320,7 +330,9 @@
             заехав в наш офис:
           </p>
 
-          <img src="img/map-min.jpg" width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+          <a class="map" href="https://www.google.ru/maps" target="_blank" rel="noopener">
+            <img src="img/map-min.jpg" width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+          </a>
 
           <a href="#">Заблудились? Напишите нам!</a>
         </section>
@@ -404,11 +416,49 @@
             </li>
             <li>
               Разработано —<br>
-              <a href="htmlacademy.ru">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+
+    <div class="modal hidden">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="fieldsets-wrapper">
+          <fieldset>
+            <legend class="visually-hidden">Ваши данные</legend>
+            <div class="user-data">
+              <label>
+                <span>Ваше имя:</span>
+                <input type="text" name="name" placeholder="Имя Фамилия">
+              </label>
+              <label>
+                <span>Ваш e-mail:</span>
+                <input type="email" name="email" placeholder="email@example.com">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Ваше сообщение</legend>
+            <label>
+              <span>Текст письма:</span>
+              <textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
+            </label>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+      <button type="button">Закрыть</button>
+    </div>
+
+    <div class="modal hidden">
+      <div class="map">
+        <img src="img/map.jpg" width="970" height="477" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+      </div>
+      <button type="button">Закрыть</button>
+    </div>
   </body>
 </html>
