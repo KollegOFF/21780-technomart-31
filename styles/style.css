@@ -229,7 +229,7 @@
   background-color: var(--basic-green);
 }
 
-.short-links .full-cart {
+.short-links .not-empty {
   background-color: var(--basic-red);
 }
 
@@ -344,7 +344,8 @@
 .auth-user li:first-of-type {
   flex-basis: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   margin-bottom: 3px;
 }
 
@@ -387,8 +388,16 @@
   font-size: 21px;
   line-height: 21px;
   text-align: center;
-  padding: 12px 0;
+  padding: 12px 0 12px 45px;
   position: relative;
+  flex-grow: 1;
+}
+
+.auth-user .logout {
+  background-color: var(--basic-white);
+  font-size: 0;
+  position: relative;
+  width: 45px;
 }
 
 .auth-user .user-name:hover {
@@ -411,7 +420,7 @@
   left: 15px;
 }
 
-.user-name::after {
+.logout::before {
   content: "";
   width: 20px;
   height: 17px;
@@ -424,12 +433,12 @@
 }
 
 .user-name:hover::before,
-.user-name:hover::after {
+.logout:hover::before {
   background-color: var(--ultra-grey);
 }
 
 .user-name:active::before,
-.user-name:active::after {
+.logout:active::before {
   background-color: var(--light-grey);
 }
 
@@ -995,7 +1004,7 @@
 }
 
 .about-us a,
-.contacts a {
+.contacts a:not(.map) {
   background-color: var(--basic-red);
   color: var(--basic-white);
   font-size: 14px;
@@ -1010,17 +1019,17 @@
   width: 220px;
 }
 
-.contacts a {
+.contacts a:not(.map) {
   margin-top: auto;
 }
 
 .about-us a:hover,
-.contacts a:hover {
+.contacts a:not(.map):hover {
   background-color: var(--extra-red);
 }
 
 .about-us a:active,
-.contacts a:active {
+.contacts a:not(.map):active {
   background-color: var(--ultra-red);
 }
 
