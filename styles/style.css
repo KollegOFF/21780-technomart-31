@@ -16,8 +16,9 @@
   --ultra-green: #518534;
   --extra-grey: #a9a9a9;
   --medium-grey: #eaeaea;
-  --super-light-grey: #e5e5e5;
+  --super-medium-grey: #f1f1f1;
   --light-grey: #c5c5c5;
+  --super-light-grey: #e5e5e5;
   --ultra-grey: #3d546f;
   --super-ultra-grey: #b5b5b5;
   --extra-red: #ca2c37;
@@ -1557,4 +1558,191 @@ input:checked + .sorting-radio {
 
 .sorting button.current::before {
   border-bottom-color: var(--basic-red);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  background-color: var(--basic-white);
+  position: absolute;
+  filter: var(--basic-shadow);
+}
+
+.modal::before {
+  content: "";
+  background-color: var(--basic-red);
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal .fieldsets-wrapper {
+  padding: 46px 80px 37px;
+}
+
+.modal fieldset {
+  margin: 0 0 13px;
+  padding: 0;
+  border: none;
+}
+
+.modal fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+.modal .user-data {
+  display: flex;
+}
+
+.modal label {
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.modal label:last-of-type {
+  margin-right: 0;
+}
+
+.modal span {
+  margin-bottom: 11px;
+}
+
+.modal input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  border: 2px solid var(--light-grey);
+  border-radius: 3px;
+  padding: 5px 8px 5px 12px;
+  width: 220px;
+  box-sizing: border-box;
+}
+
+.modal textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  border: 2px solid var(--light-grey);
+  border-radius: 3px;
+  padding: 6px 7px 8px;
+  resize: vertical;
+}
+
+.modal-footer {
+  background-color: var(--super-medium-grey);
+  padding: 37px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-footer button[type="submit"] {
+  cursor: pointer;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  border: none;
+  padding: 11px 0 9px;
+}
+
+.modal-footer button[type="submit"]:hover {
+  background-color: var(--extra-red);
+}
+
+.modal-footer button[type="submit"]:active {
+  background-color: var(--ultra-red);
+}
+
+.modal > button {
+  cursor: pointer;
+  background: url("../img/icons/close.svg") no-repeat center center;
+  font-size: 0;
+  border: none;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 21px;
+  right: 10px;
+}
+
+.modal > button:hover {
+  background-color: var(--medium-grey);
+}
+
+.modal .map {
+  width: 943px;
+  height: 449px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal > p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  position: relative;
+  margin: 0;
+  padding: 73px 177px 67px;
+}
+
+.modal > p::before {
+  content: "";
+  background: url("../img/icons/mark.svg");
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 55px;
+  left: 81px;
+}
+
+.modal-footer a {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  padding: 11px 0 9px;
+  width: 192px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.modal-footer a:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.modal-footer a:active {
+  background-color: var(--ultra-red);
+}
+
+.modal-footer button[type="button"] {
+  cursor: pointer;
+  background-color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  padding: 11px 0 9px;
+  width: 192px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.modal-footer button[type="button"]:hover {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.modal-footer button[type="button"]:active {
+  background-color: var(--ultra-red);
 }

@@ -420,5 +420,43 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal hidden">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="fieldsets-wrapper">
+          <fieldset>
+            <legend class="visually-hidden">Ваши данные</legend>
+            <div class="user-data">
+              <label>
+                <span>Ваше имя:</span>
+                <input type="text" name="name" placeholder="Имя Фамилия">
+              </label>
+              <label>
+                <span>Ваш e-mail:</span>
+                <input type="email" name="email" placeholder="email@example.com">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Ваше сообщение</legend>
+            <label>
+              <span>Текст письма:</span>
+              <textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
+            </label>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+      <button type="button">Закрыть</button>
+    </div>
+
+    <div class="modal hidden">
+      <div class="map">
+        <img src="img/map.jpg" width="970" height="477" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+      </div>
+      <button type="button">Закрыть</button>
+    </div>
   </body>
 </html>
