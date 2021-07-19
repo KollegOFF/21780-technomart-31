@@ -34,6 +34,7 @@
 
   --transparent-black: rgba(0, 0, 0, .1);
   --transparent-light-black: rgba(0, 0, 0, .0001);
+  --transparent-extra-black: rgba(0, 0, 0, .35);
   --transparent-white: rgba(255, 255, 255, .5);
   --transparent-light-white: rgba(255, 255, 255, .3);
   --transparent-extra-grey: rgba(169, 169, 169, .3);
@@ -912,30 +913,32 @@
 
 .services dl {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 240px 700px;
+  grid-template-rows: 49px 61px 61px 61px 100px;
   margin: 0;
-  padding-top: 45px;
 }
 
 .services dd {
   background-color: var(--basic-grey);
-  grid-column: 5 / -1;
+  grid-column: 2 / -1;
   grid-row: 1 / -1;
   margin: 0;
-  padding-left: 80px;
+  padding: 45px 0 0 80px;
+  background-repeat: no-repeat;
+  background-position: bottom 4px right;
+  box-shadow: -55px -30px 20px -60px var(--transparent-extra-black);
 }
 
-.delivery {
-  background: url("../img/services/delivery.png") no-repeat top right;
+dd.delivery {
+  background-image: url("../img/services/delivery.png");
 }
 
-.guarantee {
-  background: url("../img/services/guarantee.png") no-repeat top right;
+dd.guarantee {
+  background-image: url("../img/services/guarantee.png");
 }
 
-.credit {
-  background: url("../img/services/credit.png") no-repeat top right;
+dd.credit {
+  background-image: url("../img/services/credit.png");
 }
 
 .services dd.active {
@@ -948,11 +951,23 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
-  grid-column: 1 / 5;
+  grid-column: 1 / 2;
   padding: 14px 22px 17px;
   box-shadow:
     0px 1px 0px var(--extra-dark),
     inset 0px 1px 0px var(--medium-dark);
+}
+
+dt.delivery {
+  grid-row: 2 / 3;
+}
+
+dt.guarantee {
+  grid-row: 3 / 4;
+}
+
+dt.credit {
+  grid-row: 4 / 5;
 }
 
 .services dt:hover {
