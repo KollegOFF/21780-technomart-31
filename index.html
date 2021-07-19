@@ -124,17 +124,33 @@
             <h3>Доставка</h3>
             <a href="#">бесплатно</a>
           </li>
-          <li class="slider">
+          <li class="slider active">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <img src="img/slider/perforators.jpg" width="620" height="266" alt="Рабочий сверлит стену используя перфоратор.">
             <a href="catalog.html">Открыть каталог</a>
+            <div class="slider-buttons">
+              <button class="navigation-buttons" type="button">Предыдущий слайд</button>
+              <div>
+                <button class="paging-buttons active" type="button">Первый слайд</button>
+                <button class="paging-buttons" type="button">Второй слайд</button>
+              </div>
+              <button class="navigation-buttons" type="button">Следующий слайд</button>
+            </div>
           </li>
           <li class="slider">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
             <img src="img/slider/drills.jpg" width="620" height="266" alt="Рабочий сверлит стену используя дрель.">
             <a href="catalog.html">Открыть каталог</a>
+            <div class="slider-buttons">
+              <button class="navigation-buttons" type="button">Предыдущий слайд</button>
+              <div>
+                <button class="paging-buttons" type="button">Первый слайд</button>
+                <button class="paging-buttons active" type="button">Второй слайд</button>
+              </div>
+              <button class="navigation-buttons" type="button">Следующий слайд</button>
+            </div>
           </li>
         </ul>
       </section>
@@ -265,7 +281,7 @@
           </p>
 
           <dl>
-            <dt class="active">Доставка</dt>
+            <dt class="delivery active">Доставка</dt>
             <dd class="delivery active">
               <p class="service-title">Доставка</p>
               <p>
@@ -275,18 +291,18 @@
                 поднимая его на ваш этаж!
               </p>
             </dd>
-            <dt>Гарантия</dt>
+            <dt class="guarantee">Гарантия</dt>
             <dd class="guarantee">
               <p class="service-title">Гарантия</p>
               <p>
                 Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его<br>
-                возгоранием, вы всегда можете быть уверены в нашей
+                возгоранием, вы всегда можете быть уверены в нашей<br>
                 гарантии. Мы обменяем сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </dd>
-            <dt>Кредит</dt>
+            <dt class="credit">Кредит</dt>
             <dd class="credit">
               <p class="service-title">Кредит</p>
               <p>
@@ -423,7 +439,7 @@
       </div>
     </footer>
 
-    <div class="modal hidden">
+    <div class="modal feedback hidden">
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="fieldsets-wrapper">
           <fieldset>
@@ -454,7 +470,7 @@
       <button type="button">Закрыть</button>
     </div>
 
-    <div class="modal hidden">
+    <div class="modal map hidden">
       <div class="map">
         <img src="img/map.jpg" width="970" height="477" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
       </div>
