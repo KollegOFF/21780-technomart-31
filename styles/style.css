@@ -1663,8 +1663,29 @@ input:checked + .sorting-radio {
 
 .modal {
   background-color: var(--basic-white);
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   filter: var(--basic-shadow);
+  z-index: 1;
+}
+
+.modal.feedback {
+  width: 620px;
+  height: 430px;
+}
+
+.modal.map {
+  width: 943px;
+  height: 449px;
+}
+
+.modal.buy {
+  width: 620px;
+  height: 282px;
 }
 
 .modal::before {
@@ -1789,7 +1810,7 @@ input:checked + .sorting-radio {
   line-height: 30px;
   position: relative;
   margin: 0;
-  padding: 73px 177px 67px;
+  padding: 73px 176px 67px;
 }
 
 .modal > p::before {
